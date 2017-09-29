@@ -1,0 +1,15 @@
+## step2: Tain based on yeastbow2
+ 
+cd Step2_MyNet/
+
+/Applications/MATLAB_R2016b.app/Contents/MacOS/MATLAB_maci64  -nodisplay < ../Step3_Performance/Programs/Step3_1_Training_Process_Movie.m
+
+
+open .
+
+cd ../
+
+
+
+
+

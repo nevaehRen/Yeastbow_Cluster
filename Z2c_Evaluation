@@ -1,0 +1,27 @@
+
+## step1: *.tif -> Evaluation_train.csv 
+
+cd Step1_DataPreparation/Programs/
+nohup matlab -nodisplay -nosplash < Step1_2_ImageJEvaluation.m
+cd ../../
+
+
+## step2: Evaluation_train.csv -> Evaluation.csv using yeastbow2
+ 
+cd Step2_MyNet/
+python  Final_Evaluation.py
+cd ../
+
+
+## step3: Evaluation.csv -> *.zip generate Fiji ROIs
+
+cd Step3_Performance/Programs/
+nohup matlab -nodisplay -nosplash < Step3_6_Evaluation.m
+cd ../Evaluation/
+open .
+cd ../../
+
+
+
+
+
